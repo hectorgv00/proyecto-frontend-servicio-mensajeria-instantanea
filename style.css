@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+#full-site {
+    display: flex;
+
+}
+
+.navegador{
+    height: 100vh;
+    width: 20vw;
+    background-color: #4D55E0;
+}
+
+.header-nav {
+    background-color: aqua;
+    width: 100%;
+    height: 10vh;
+}
