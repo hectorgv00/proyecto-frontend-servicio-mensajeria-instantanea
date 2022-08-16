@@ -6,6 +6,7 @@
 
 #full-site {
     display: flex;
+    flex-direction: row;
 
 }
 
@@ -31,6 +32,7 @@
 .h1-header-nav{
     margin: auto;
     margin-top: 9px;
+    margin-bottom: 3%;
     color: white;
     font-family: 'Montserrat', sans-serif;
 
@@ -41,22 +43,254 @@
     color: rgb(205, 205, 205);
     font-family: 'Expletus Sans', cursive;
     font-size: small;
-    margin-top: -6vh;
+    cursor: pointer;
 
 }
+
+
 
 .h2-header-nav::before{
     content: "";
     display:table;
 
     width: 10px;
-    color: green;
+    height: 10px;
+    border-radius: 100%;
+    background: green;
+    position: relative;
+    top: 1.15em;
+    left: -1em;
+  
+
+}
+
+.desplegable{
+    text-align: left;
+    list-style: none;
+    display:none;
+    flex-direction: column;
+    text-align: left;
+    overflow:visible;
+    color: rgb(205, 205, 205);
+    font-family: 'Expletus Sans', cursive;
+    font-size: small;
+}
+
+
+
+.conectado{
+    margin-top: 5%;
+
+}
+
+.conectado::before{
+    content: "";
+    display:table;
+
+    width: 10px;
     height: 10px;
     border-radius: 100%;
     background-color: green;
     position: relative;
     top: 1.15em;
     left: -1em;
-  
+}
 
+.ausente{
+    margin-top: 5%;
+}
+
+.ausente::before{
+    content: "";
+    display:table;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgb(155, 208, 20);
+    position: relative;
+    top: 1.15em;
+    left: -1em;
+}
+
+.no-conectado{
+    margin-top: 5%;
+}
+
+.no-conectado::before{
+    content: "";
+    display:table;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgb(122, 122, 122);
+    position: relative;
+    top: 1.15em;
+    left: -1em;
+}
+
+.no-molestar{
+    margin-top: 5%;
+}
+
+.no-molestar::before{
+    content: "";
+    display:table;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgb(199, 27, 27);
+    position: relative;
+    top: 1.15em;
+    left: -1em;
+}
+
+/*----------------------------Fin del nav---------------------------------*/
+
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+#header{
+    width: 100%;
+    height: 10vh;
+    /* background-color: aqua; */
+    display: flex;
+    border-bottom: 5px rgba(30,33,84,1) solid ;
+    
+}
+
+.header-header{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 2%;
+    margin-top: 0.5%;
+    font-weight: 800;
+    font-size:2.5vh;
+
+}
+
+.subtexto-header-header{
+    font-family: 'Expletus Sans', cursive;
+    margin-left: 2%;
+    margin-top: 0.5%;
+    font-weight: 500;
+
+}
+
+.div-textos{
+    width: 60%;
+    height: 10vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+.div-input{
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 5%;
+
+}
+
+#input-busqueda{
+    border: none;
+    height: 3vh;
+    width: 12vw;
+    font-family: 'Expletus Sans', cursive;
+    background-color: rgb(243, 243, 243);
+    text-indent:6%;
+
+}
+
+#button-busqueda-header{
+    border: none;
+    background-color:rgb(243, 243, 243);
+    height: 3vh;
+    width: 3vw;
+    cursor:pointer;
+}
+
+#button-busqueda-header:hover{
+    background-color:rgb(210, 210, 210);
+
+}
+
+/*______________________fin del header__________________*/
+
+#screen{
+    width: 100%;
+    height: 75vh;
+    font-family: 'Hind Madurai', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
+
+}
+
+#screen > div {
+    width: 30%;
+    height: 3em;
+    /* background-color: rgb(210, 210, 210); */
+    margin-top: 3%;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    border-left: 1px rgba(30,33,84,1)   solid;
+}
+
+#screen > div > p {
+    margin-left: 3%;
+}
+
+#screen > div > p.fecha-hora{
+    color: rgb(127, 127, 127);
+    font-size: small;
+}
+
+/*-----------------------------------fin Screen -----------------------------*/
+
+#input-texto{
+    width: 100%;
+    height: 15vh;
+    border-top: 5px rgba(30,33,84,1) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#input-input-texto{
+    /* margin: auto; */
+    width: 70vw;
+    height: 6vh;
+    text-indent:3%;
+    font-family: 'Hind Madurai', sans-serif;
+
+    
+}
+
+#button-input-texto{
+    height: 6vh;
+    width: 3vw;
+    background-color: white;
+    border: 1px black solid;
+    border-left: none;
+    font-size: 3vh;
+    font-family: 'Hind Madurai', sans-serif;
+
+}
+
+#button-input-texto:hover{
+    transition:ease-in;
+    cursor: pointer;
+    background-color: rgba(30,33,84,1)  ;
 }

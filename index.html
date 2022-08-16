@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Bree+Serif&family=Cairo&family=Catamaran&family=Chivo:wght@300;700&family=Expletus+Sans&family=Hind+Madurai&family=Koulen&family=Libre+Baskerville:wght@700&family=Montserrat&family=Oleo+Script+Swash+Caps&family=Oswald&family=Parisienne&family=Radio+Canada&family=Raleway:wght@200&family=Roboto:wght@300&family=Rubik:wght@300&family=Tapestry&family=Titillium+Web:wght@600&family=Yantramanav&display=swap" rel="stylesheet">    <title>Reto Bootcamp</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Bree+Serif&family=Cairo&family=Catamaran&family=Chivo:wght@300;700&family=Expletus+Sans&family=Hind+Madurai&family=Koulen&family=Libre+Baskerville:wght@700&family=Montserrat&family=Oleo+Script+Swash+Caps&family=Oswald&family=Parisienne&family=Radio+Canada&family=Raleway:wght@200&family=Roboto:wght@300&family=Rubik:wght@300&family=Tapestry&family=Titillium+Web:wght@600&family=Yantramanav&display=swap"
+        rel="stylesheet">
+    <title>Reto Bootcamp</title>
 </head>
+
 <body>
-    
+
     <div id="full-site">
 
         <nav class="navegador">
@@ -19,18 +24,60 @@
                 <h1 class="h1-header-nav">
                     Reto Bootcamp
                 </h1>
-                <h2 class="h2-header-nav">
+                <h2 class="h2-header-nav" onclick="desplegable()">
                     @UsuarioAlumno
                 </h2>
+
+                <ul class="desplegable">
+                    <li class="conectado">Conectado</li>
+                    <li class="ausente">Ausente</li>
+                    <li class="no-conectado">No conectado</li>
+                    <li class="no-molestar">No molestar</li>
+                </ul>
             </div>
+
+
 
         </nav>
 
+        <main id="main">
+
+            <header id="header">
+                <div class="div-textos">
+
+                    <h2 class="header-header">
+                        Texto de ejemplo del título del canal
+                    </h2>
+                    <p class="subtexto-header-header">
+                        Subtexto de ejemplo del canal
+                    </p>
+
+                </div>
+
+                <div class="div-input">
+                    <input type="text" placeholder="Búsqueda" name="input-busqueda" id="input-busqueda">
+                    <button id="button-busqueda-header">🔎</button>
+                </div>
+
+            </header>
+
+                <!-- aquí irán los mensajes -->
+
+            <div id="screen">
 
 
+            </div>
 
 
+            <div id="input-texto">
 
+                <input type="text" placeholder="Inserte texto aquí" id="input-input-texto">
+                <button id="button-input-texto" onclick="enviar()" >+</button>
+
+            </div>
+
+
+        </main>
 
 
 
@@ -50,4 +97,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>
