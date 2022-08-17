@@ -1,16 +1,6 @@
 
 
-function desplegable(){
 
- let lista = document.getElementsByClassName("desplegable")[0];
-
-   if(lista.style.display = "none"){
-    lista.style.display = "flex";
-}   else{
-    lista.style.removeProperty("display");
-   }
-
-}
 
 function enviar(){
     let screen = document.getElementById("screen");

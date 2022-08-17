@@ -43,7 +43,6 @@
     color: rgb(205, 205, 205);
     font-family: 'Expletus Sans', cursive;
     font-size: small;
-    cursor: pointer;
 
 }
 
@@ -245,7 +244,10 @@
     display: flex;
     align-items: center;
     border-left: 1px rgba(30,33,84,1)   solid;
+
+
 }
+
 
 #screen > div > p {
     margin-left: 3%;
