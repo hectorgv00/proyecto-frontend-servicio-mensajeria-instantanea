@@ -10,6 +10,8 @@
 
 }
 
+/*------------------Nav----------------------*/
+
 .navegador{
     height: 100vh;
     width: 15vw;
@@ -21,7 +23,7 @@
 .header-nav{
     /* background-color: #1e2154; */
     width: 100%;
-    height: 9vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -46,6 +48,24 @@
 
 }
 
+.icono-nav{
+    /* margin-top: 5%; */
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#logo-telegrafo{
+    width: 4em;
+    height: 4em;
+    color:white;
+
+
+}
 
 
 .h2-header-nav::before{
@@ -243,8 +263,9 @@
     width: 30%;
     height: 3em;
     /* background-color: rgb(210, 210, 210); */
-    margin-top: 3%;
+    margin-top: 1.5%;
     margin-left: 3%;
+    margin-bottom: 1.5%;
     display: flex;
     align-items: center;
     border-left: 1px rgba(30,33,84,1)   solid;

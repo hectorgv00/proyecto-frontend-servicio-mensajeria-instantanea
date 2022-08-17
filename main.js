@@ -2,26 +2,27 @@
 let archivoMensajes = [];
 
 
-function enviar(){
+function enviar() {
     let screen = document.getElementById("screen");
     var d = new Date();
     let texto = document.getElementById("input-input-texto").value;
 
 
-    if(texto === " "){
+    if (texto === " ") {
         document.getElementById("input-input-texto").value = " ";
-    }else{
+    } else {
 
-    screen.innerHTML += "<div>" + "<p>" + texto + "</p>" + "<p class='fecha-hora'>" + d.getHours() + ":" + d.getMinutes() + "<br>" + d.toLocaleDateString() + "</p >" 
-+    "</div>";
+        screen.innerHTML += "<div>" + "<p>" + texto + "</p>" + "<p class='fecha-hora'>" + d.getHours() + ":" + d.getMinutes() + "<br>" + d.toLocaleDateString() + "</p >"
+            + "</div>";
 
-    archivoMensajes.push(texto);    
-}
+        archivoMensajes.push(texto);
+    }
+
+    
+    screen.scrollTop = screen.scrollHeight;
+
+
     document.getElementById("input-input-texto").value = " ";
-
-
-    console.log(archivoMensajes);
-
 }
 
 
@@ -44,8 +45,8 @@ function enviar(){
 
 
 
-document.addEventListener('keydown', function(event) {
-    if(event.key == 'Enter') {
-       enviar();
+document.addEventListener('keydown', function (event) {
+    if (event.key == 'Enter') {
+        enviar();
     }
 });
