@@ -261,7 +261,7 @@
 
 #screen > div {
     width: 30%;
-    height: 3em;
+    height: auto;
     /* background-color: rgb(210, 210, 210); */
     margin-top: 1.5%;
     margin-left: 3%;
