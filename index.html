@@ -34,6 +34,17 @@
                 <h2 class="h2-header-nav">
                     @UsuarioAlumno
                 </h2>
+                    <div id="añdirtexto" >
+                        <button onclick="abrirInputCanales()" id="abrir-input">Crear canal</button> 
+                    </div>
+                    <div class="abre-crearCanal">
+                        <input type="text" id="input-canales"><button id="boton-crear-canal" onclick='enviar("canales","input-canales")'>▼</button>
+                    </div>
+                    <div id="contenedor-canales">
+                        <p>Canales</p>
+                        <hr>
+                        <div id="canales"></div>
+                    </div>
 
 
             </div>
@@ -55,7 +66,7 @@
                     </p>
 
                 </div>
-
+                <!-- Búsqueda -->
                 <div class="div-input">
                     <input type="text" placeholder="Búsqueda" name="input-busqueda" id="input-busqueda">
                     <button id="button-busqueda-header">🔎</button>
@@ -70,11 +81,11 @@
 
             </div>
 
-
+            <!-- input del texto -->
             <div id="input-texto">
 
-                <input type="text" placeholder="Inserte texto aquí" id="input-input-texto" value=" ">
-                <button id="button-input-texto" onclick="enviar()">+</button>
+                <input type="text" placeholder="Inserte texto aquí" id="input-input-texto" value=" " autofocus>
+                <button id="button-input-texto" onclick='enviar("screen","input-input-texto")'>+</button>
 
             </div>
 
