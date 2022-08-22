@@ -34,20 +34,20 @@
                 <h2 class="h2-header-nav">
                     @UsuarioAlumno
                 </h2>
-                <div class="añdirtexto">
-                    <button onclick="abrirInputCanales()" class="abrir-input">Crear canal</button>
+                <div id="añdirtexto">
+                    <button onclick="abrirInputCanales()" id="abrir-input">Crear canal</button>
                 </div>
                 <div class="abre-crearCanal">
-                    <input type="text" class="input-canales" placeholder="Nombre del canal">
-                    <button class="boton-crear-canal" onclick='enviar("canales","input-canales")'>▼</button>
+                    <input type="text" id="input-canales" placeholder="Nombre del canal">
+                    <button id="boton-crear-canal" onclick='enviar("canales","input-canales")'>▼</button>
                 </div>
 
                     <!-------------------- Canales ---------------------->
 
-                <div class="contenedor-canales">
+                <div id="contenedor-canales">
                     <p>Canales</p>
                     <hr>
-                    <div class="canales"></div>
+                    <div id="canales"></div>
                 </div>
 
 
@@ -57,9 +57,9 @@
 
         </nav>
 
-        <main class="main">
+        <main id="main">
 
-            <header class="header">
+            <header id="header">
                 <div class="div-textos">
 
                     <h2 class="header-header">
@@ -71,27 +71,28 @@
                 </div>
                 <!-- Búsqueda -->
                 <div class="div-input">
-                    <input type="text" placeholder="Búsqueda" name="input-busqueda" class="input-busqueda">
-                    <button class="button-busqueda-header">🔎</button>
+                    <input type="text" placeholder="Búsqueda" name="input-busqueda" id="input-busqueda">
+                    <button id="button-busqueda-header">🔎</button>
                 </div>
 
             </header>
 
             <!-- aquí irán los mensajes -->
 
-            <div class="screen">
+            <div id="screen">
 
 
             </div>
 
             <!-- input del texto -->
-            <div class="input-texto">
+            <div id="input-texto">
 
-                <input type="text" placeholder="Inserte texto aquí" class="input-input-texto" value=" " autofocus>
-                <button class="button-input-texto" onclick='enviar("screen","input-input-texto")'>+</button>
+                <input type="text" placeholder="Inserte texto aquí" id="input-input-texto" value=" " autofocus>
+                <button id="button-input-texto" onclick='enviar("screen","input-input-texto")'>+</button>
 
             </div>
-           
+
+
         </main>
 
 
