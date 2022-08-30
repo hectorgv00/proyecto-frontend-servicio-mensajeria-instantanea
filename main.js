@@ -1,6 +1,7 @@
 
 let archivoMensajes = [];
 let archivoPantallas = [];
+let archivoCanales = [];
 
 
 function enviar(donde, que) {
@@ -26,9 +27,11 @@ function enviar(donde, que) {
         if (texto === "") {
             texto = "";
         } else {
-            screen.innerHTML += "<div>" + "<button class='boton-canales'>" + texto + "</button>" + "</div>";
+            screen.innerHTML += "<div>" + "<button class='boton-canales' onclick='canal()'>" + texto + "</button>" + "</div>";
 
-            document.getElementsByClassName("div-textos")[0].innerHTML = "<h2 class='header-header'>" + texto + "</h2>";
+            archivoCanales.push(texto);
+
+            
         }
     }
     screen.scrollTop = screen.scrollHeight;
@@ -55,7 +58,16 @@ function abrirInputCanales() {
 
 
 
+function canal() {
+    
+    for(let i = 0; i < archivoCanales.length; i++){
+console.log("object");
+    let nombreCanal = document.getElementsByClassName("boton-canales")[i].textContent;
+    document.getElementsByClassName("div-textos")[0].innerHTML = "<h2 class='header-header'>" + nombreCanal + "</h2>";
 
+
+    }
+}
 
 
 
