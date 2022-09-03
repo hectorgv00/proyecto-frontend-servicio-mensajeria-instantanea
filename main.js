@@ -11,8 +11,8 @@ function enviar(donde, que) {
 
     if (donde == "screen" && que == "input-input-texto") {
 
-        if (texto === " ") {
-            texto = " ";
+        if (texto.trim() === "") {
+            texto = "";
         } else {
 
             screen.innerHTML += "<div>" + "<p>" + texto + "</p>" + "<p class='fecha-hora'>" + d.getHours() + ":" + d.getMinutes() + "<br>" + d.toLocaleDateString() + "</p >"
@@ -24,7 +24,7 @@ function enviar(donde, que) {
         }
 
     } else if (donde == "canales" && que == "input-canales") {
-        if (texto === "") {
+        if (texto.trim() === "") {
             texto = "";
         } else {
             screen.innerHTML += "<div>" + "<button class='boton-canales' onclick='canal()'>" + texto + "</button>" + "</div>";
@@ -61,7 +61,7 @@ function abrirInputCanales() {
 function canal() {
     
     for(let i = 0; i < archivoCanales.length; i++){
-console.log("object");
+console.log(archivoCanales[i]);
     let nombreCanal = document.getElementsByClassName("boton-canales")[i].textContent;
     document.getElementsByClassName("div-textos")[0].innerHTML = "<h2 class='header-header'>" + nombreCanal + "</h2>";
 
