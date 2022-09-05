@@ -64,7 +64,7 @@ function canal() {
 console.log(archivoCanales[i]);
     let nombreCanal = document.getElementsByClassName("boton-canales")[i].textContent;
     document.getElementsByClassName("div-textos")[0].innerHTML = "<h2 class='header-header'>" + nombreCanal + "</h2>";
-
+    document.getElementsByClassName("screenes")[0].innerHTML += "<div class='screen' name='" + nombreCanal + "'></div>";
 
     }
 }
