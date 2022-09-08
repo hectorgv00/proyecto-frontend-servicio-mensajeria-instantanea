@@ -2,9 +2,14 @@
 let archivoMensajes = [];
 let archivoPantallas = [];
 let archivoCanales = [];
+let baseDeDatos = [];
+
+
+// ---------------------------Funcion de enviar inputs-----------------
 
 
 function enviar(donde, que) {
+
     let screen = document.getElementsByClassName(donde)[0];
     var d = new Date();
     let texto = document.getElementsByClassName(que)[0].value;
@@ -18,7 +23,8 @@ function enviar(donde, que) {
             screen.innerHTML += "<div>" + "<p>" + texto + "</p>" + "<p class='fecha-hora'>" + d.getHours() + ":" + d.getMinutes() + "<br>" + d.toLocaleDateString() + "</p >"
                 + "</div>";
 
-            archivoMensajes.push(texto);
+            archivoMensajes.push("<div>" + "<p>" + texto + "</p>" + "<p class='fecha-hora'>" + d.getHours() + ":" + d.getMinutes() + "<br>" + d.toLocaleDateString() + "</p >"
+            + "</div>");
             archivoPantallas.push(screen.innerHTML);
 
         }
@@ -31,7 +37,16 @@ function enviar(donde, que) {
 
             archivoCanales.push(texto);
 
-            
+            function nuevoObjeto(titulo, usuario) {
+
+                this.titulo= titulo;  
+                this.usuario= usuario,
+                this.mensajes= []
+                
+            };
+
+            objetoAñadir = new nuevoObjeto(texto, usuario="no definido")
+            agregar();
         }
     }
     screen.scrollTop = screen.scrollHeight;
@@ -40,7 +55,16 @@ function enviar(donde, que) {
     document.getElementsByClassName(que)[0].value = " ";
 }
 
+function agregar(){
+baseDeDatos.push(objetoAñadir)
+console.log(baseDeDatos);
+}
 
+
+
+// ------------------------fin funcion enviar inputs------------------------
+
+// ---------------------------funcion abrir input canal---------------------------
 
 function abrirInputCanales() {
     let boton = document.getElementsByClassName("abrir-input")[0];
@@ -56,16 +80,12 @@ function abrirInputCanales() {
     }
 }
 
+// -------------------------------fin funcion abrir input canal--------------------------
 
 
 function canal() {
-    
-    for(let i = 0; i < archivoCanales.length; i++){
-console.log(archivoCanales[i]);
-    let nombreCanal = document.getElementsByClassName("boton-canales")[i].textContent;
-    document.getElementsByClassName("div-textos")[0].innerHTML = "<h2 class='header-header'>" + nombreCanal + "</h2>";
-    document.getElementsByClassName("screenes")[0].innerHTML += "<div class='screen' name='" + nombreCanal + "'></div>";
-
+    if(document.getElementsByClassName('boton-canales')[0].innerHTML == baseDeDatos[0].titulo){
+        console.log('si');
     }
 }
 
@@ -78,7 +98,7 @@ console.log(archivoCanales[i]);
 
 
 
-
+// ------------------------event listener enter-----------------------------
 
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
