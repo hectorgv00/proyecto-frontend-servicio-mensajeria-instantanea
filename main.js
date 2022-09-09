@@ -24,7 +24,7 @@ function enviar(donde, que) {
                 + "</div>";
 
             archivoMensajes.push("<div>" + "<p>" + texto + "</p>" + "<p class='fecha-hora'>" + d.getHours() + ":" + d.getMinutes() + "<br>" + d.toLocaleDateString() + "</p >"
-            + "</div>");
+                + "</div>");
             archivoPantallas.push(screen.innerHTML);
 
         }
@@ -33,19 +33,34 @@ function enviar(donde, que) {
         if (texto.trim() === "") {
             texto = "";
         } else {
-            screen.innerHTML += "<div>" + "<button class='boton-canales' onclick='canal()'>" + texto + "</button>" + "</div>";
+            
+            screen.innerHTML += '<div> <button class="boton-canales">' + texto + '</button>' + '</div>';
+
 
             archivoCanales.push(texto);
 
-            function nuevoObjeto(titulo, usuario) {
+//               Lo conseguí :')
 
-                this.titulo= titulo;  
-                this.usuario= usuario,
-                this.mensajes= []
-                
+            for(let i=0; i<archivoCanales.length;i++){
+
+            let elemento = document.getElementsByClassName("boton-canales")[i];
+
+            elemento.onclick = canal;
+
+        }
+// ---------------------------------------------------------------------------
+
+
+
+            function cuentaCanales(titulo, usuario) {
+
+                this.titulo = titulo;
+                this.usuario = usuario,
+                    this.mensajes = []
+
             };
 
-            objetoAñadir = new nuevoObjeto(texto, usuario="no definido")
+            objetoAñadir = new cuentaCanales(texto, usuario = "no definido")
             agregar();
         }
     }
@@ -55,9 +70,9 @@ function enviar(donde, que) {
     document.getElementsByClassName(que)[0].value = " ";
 }
 
-function agregar(){
-baseDeDatos.push(objetoAñadir)
-console.log(baseDeDatos);
+function agregar() {
+    baseDeDatos.push(objetoAñadir)
+    console.log(baseDeDatos);
 }
 
 
@@ -83,17 +98,30 @@ function abrirInputCanales() {
 // -------------------------------fin funcion abrir input canal--------------------------
 
 
-function canal() {
-    if(document.getElementsByClassName('boton-canales')[0].innerHTML == baseDeDatos[0].titulo){
-        console.log('si');
+// function dynamicFunction(e) {
+//     e.preventDefault();
+//     alert(`You have clicked on ${e.target.innerHTML}`);
+// }
+
+// const container = document.getElementsByClassName("canales")[0];
+
+// const elements = document.querySelectorAll(".boton-canales");
+
+// for (let i = 0; i < elements.length; i++) {
+//     elements[i].addEventListener("click", dynamicFunction);
+// }
+
+
+function canal(){
+    for(let i =0; i<baseDeDatos.length;i++){
+        if(this.innerHTML == baseDeDatos[i].titulo){
+           let contTitulo = document.getElementsByClassName("header-header")[0];
+        
+            contTitulo.innerHTML = baseDeDatos[i].titulo;
+        
+        }
     }
 }
-
-
-
-
-
-
 
 
 
