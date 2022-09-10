@@ -48,8 +48,8 @@ function enviar(donde, que) {
          if (texto.trim() === "") {
             texto = "";
         } else {
-            screen.innerHTML += '<div> <button class="boton-canales">' + texto + '</button>' + '</div>';
-            archivoCanales.push(texto);
+            screen.innerHTML += '<div> <button class="boton-canales">' + texto.trim() + '</button>' + '</div>';
+            archivoCanales.push(texto.trim());
             for(let i=0; i<archivoCanales.length;i++){
                 let elemento = document.getElementsByClassName("boton-canales")[i];
                 elemento.onclick = canal;
@@ -64,14 +64,14 @@ function enviar(donde, que) {
                 this.hora = [];
             };
 
-            objetoAñadir = new cuentaCanales(texto, usuario = "no definido")
+            objetoAñadir = new cuentaCanales(texto.trim(), usuario = "no definido")
             agregar();
         }
     }
     screen.scrollTop = screen.scrollHeight;
 
 
-    document.getElementsByClassName(que)[0].value = " ";
+    document.getElementsByClassName(que)[0].value = "";
 }
 
 
@@ -81,8 +81,6 @@ function agregar() {
 }
 
 
-
-// ------------------------fin funcion enviar inputs------------------------
 
 // ---------------------------funcion abrir input canal---------------------------
 
@@ -107,9 +105,9 @@ function canal(){
     for(let i =0; i<baseDeDatos.length;i++){
         if(this.innerHTML == baseDeDatos[i].titulo){
            let contTitulo = document.getElementsByClassName("header-header")[0];
-            document.getElementsByClassName("screen")[0].innerHTML=""
+            document.getElementsByClassName("screen")[0].innerHTML="";
             contTitulo.innerHTML = baseDeDatos[i].titulo;
-            for(m=0;m<baseDeDatos[i].mensajes.length; m++){
+            for(let m=0;m<baseDeDatos[i].mensajes.length; m++){
                 document.getElementsByClassName("screen")[0].innerHTML += "<div>" + "<p>" + baseDeDatos[i].mensajes[m] + "</p>" + "<p class='fecha-hora'>"+ baseDeDatos[i].hora[m] + "</p >"
                 + "</div>";
             }
@@ -120,6 +118,19 @@ function canal(){
 }
 
 
+// -------------------------Buscador----------------------
+
+
+let buscador=()=>{
+    let textoBuscador = document.getElementsByClassName("input-busqueda")[0].value.trim(); 
+    
+    for (let i = 0; i < baseDeDatos.length; i++) {
+      if(baseDeDatos[i].mensajes.includes(textoBuscador)){
+        alert(`El mensaje que busca "${textoBuscador}" se encuentra en el canal: ${baseDeDatos[i].titulo}`)
+      }
+        
+    }
+}
 
 
 // ------------------------event listener enter-----------------------------
