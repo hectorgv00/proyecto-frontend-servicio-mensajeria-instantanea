@@ -34,22 +34,24 @@
                 <h2 class="h2-header-nav">
                     @UsuarioAlumno
                 </h2>
-                <div class="añdirtexto">
-                    <button onclick="abrirInputCanales()" class="abrir-input">Crear canal</button>
-                </div>
-                <div class="abre-crearCanal">
-                    <input type="text" class="input-canales" placeholder="Nombre del canal">
-                    <button class="boton-crear-canal" onclick='enviar("canales","input-canales")'>▼</button>
+                <div id="bloque-abrir-canales">
+                    <div class="añdirtexto">
+                        <button onclick="abrirInputCanales()" class="abrir-input">Crear canal</button>
+                    </div>
+                    <div class="abre-crearCanal">
+                        <input type="text" class="input-canales" placeholder="Nombre del canal">
+                        <button class="boton-crear-canal" onclick='enviar("canales","input-canales")'>▼</button>
+                    </div>
                 </div>
 
                 <!-------------------- Canales ---------------------->
-
-                <div class="contenedor-canales">
-                    <p>Canales</p>
-                    <hr>
-                    <div class="canales"></div>
+                <div class="bloque-contiene-canales">
+                    <div class="contenedor-canales">
+                        <p>Canales</p>
+                        <hr>
+                        <div class="canales"></div>
+                    </div>
                 </div>
-
 
             </div>
 
@@ -62,11 +64,7 @@
             <header class="header">
                 <div class="div-textos">
 
-                    <h2 class="header-header">
-
-                    </h2>
-                    <p class="subtexto-header-header">
-                    </p>
+                    <h2 class="header-header"></h2>
 
                 </div>
                 <!-- Búsqueda -->

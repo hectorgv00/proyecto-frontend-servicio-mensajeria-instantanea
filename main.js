@@ -127,6 +127,7 @@ let buscador=()=>{
     for (let i = 0; i < baseDeDatos.length; i++) {
       if(baseDeDatos[i].mensajes.includes(textoBuscador)){
         alert(`El mensaje que busca "${textoBuscador}" se encuentra en el canal: ${baseDeDatos[i].titulo}`)
+        document.getElementsByClassName("input-busqueda")[0].value ="";
       }
         
     }
