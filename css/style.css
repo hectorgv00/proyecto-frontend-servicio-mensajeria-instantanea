@@ -1,21 +1,20 @@
 * {
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
 }
 
 #full-site {
     display: flex;
     flex-direction: row;
-
 }
 
-.no-activo{
+.no-activo {
     overflow: hidden;
 }
 
-.active{
-    background-color:rgb(17, 19, 47) ;
+.active {
+    background-color: rgb(17, 19, 47);
 }
 
 /*------------------Nav----------------------*/
@@ -39,27 +38,22 @@
     align-content: center;
 }
 
-#bloque-abrir-canales{
+#bloque-abrir-canales {
     width: 100%;
     height: 15vh;
 }
 
-
 .h1-header-nav {
-    margin: auto;
-    margin-top: 9px;
-    margin-bottom: 3%;
+    margin: 9px auto 3%;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: "Montserrat", sans-serif;
 }
 
 .h2-header-nav {
     /* margin: auto; */
     color: rgb(205, 205, 205);
-    font-family: 'Expletus Sans', cursive;
+    font-family: "Expletus Sans", cursive;
     font-size: small;
-
 }
 
 .icono-nav {
@@ -70,7 +64,6 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-
 }
 
 #logo-telegrafo {
@@ -79,10 +72,7 @@
     width: 3em;
     height: 3em;
     color: white;
-
-
 }
-
 
 .h2-header-nav::before {
     content: "";
@@ -95,8 +85,6 @@
     position: relative;
     top: 1.15em;
     left: -1em;
-
-
 }
 
 .desplegable {
@@ -107,15 +95,12 @@
     text-align: left;
     overflow: visible;
     color: rgb(205, 205, 205);
-    font-family: 'Expletus Sans', cursive;
+    font-family: "Expletus Sans", cursive;
     font-size: small;
 }
 
-
-
 .conectado {
     margin-top: 5%;
-
 }
 
 .conectado::before {
@@ -182,21 +167,18 @@
     left: -1em;
 }
 
-
-
-.añdirtexto{
+.añdirtexto {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: auto;
     margin-top: 10%;
     justify-content: center;
-    color: #FFF;
-    font-family: 'Montserrat', sans-serif;
-
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
 }
 
-.abre-crearCanal{
+.abre-crearCanal {
     display: none;
     width: 100%;
     align-items: center;
@@ -204,52 +186,50 @@
     justify-content: center;
 }
 
-
-.input-canales{
+.input-canales {
     background-color: rgb(17, 19, 47);
     margin-top: 5%;
     border: 1px solid rgba(30, 33, 84, 1);
-    color:  #FFF;
-    font-family: 'Hind Madurai', sans-serif;
+    color: #fff;
+    font-family: "Hind Madurai", sans-serif;
     text-indent: 3%;
     width: 80%;
     /* margin: auto; */
     /* border-radius: 10%; */
 }
 
-.boton-crear-canal{
+.boton-crear-canal {
     background: none;
     border: none;
-    color: #FFF;
-    font-family: 'Hind Madurai', sans-serif;
+    color: #fff;
+    font-family: "Hind Madurai", sans-serif;
     font-size: larger;
     /* margin-left: 5%; */
     margin-top: 5%;
     width: 15%;
 }
 
-.boton-crear-canal:hover{
+.boton-crear-canal:hover {
     background-color: rgb(17, 19, 47);
     cursor: pointer;
-
 }
 
-.abrir-input{
+.abrir-input {
     background: none;
     border: none;
-    color: #FFF;
-    font-family: 'Hind Madurai', sans-serif;
+    color: #fff;
+    font-family: "Hind Madurai", sans-serif;
     font-size: larger;
     width: 80%;
     border-radius: 5%;
 }
 
-.abrir-input:hover{
+.abrir-input:hover {
     background-color: rgb(17, 19, 47);
     cursor: pointer;
 }
 
-.bloque-contiene-canales{
+.bloque-contiene-canales {
     width: 100%;
     height: 75vh;
     display: flex;
@@ -257,69 +237,62 @@
     align-items: center;
     justify-content: center;
     justify-items: center;
-
 }
 
-.contenedor-canales{
+.contenedor-canales {
     margin-top: 20%;
     width: 80%;
     height: 75vh;
-    color: #FFF;
+    color: #fff;
 }
 
-.canales{
+.canales {
     overflow-y: auto;
     height: 80%;
 }
 
 /* -----------------------Barra canales-------------- */
 
-.canales::-webkit-scrollbar{
+.canales::-webkit-scrollbar {
     width: 10px;
 }
 
-.canales::-webkit-scrollbar-track{
-    
+.canales::-webkit-scrollbar-track {
     background: rgb(17, 19, 47);
 }
 
-.canales::-webkit-scrollbar-thumb{
-    
-    background-color: #FFF;
+.canales::-webkit-scrollbar-thumb {
+    background-color: #fff;
     max-height: 10px;
     border-radius: 5px;
 }
 /* -------------------------------------------------------------- */
 
-.contenedor-canales>p{
-    font-family: 'Montserrat', sans-serif;
-
+.contenedor-canales > p {
+    font-family: "Montserrat", sans-serif;
 }
 
-.canales>div>button{
-    font-family: 'Montserrat', sans-serif;
-
+.canales > div > button {
+    font-family: "Montserrat", sans-serif;
 }
 
-hr{
-    margin: auto;
-    margin-top: 5%;
+hr {
+    margin: 5% auto auto;
     width: 80%;
 }
 
-.boton-canales{
+.boton-canales {
     margin-top: 5%;
-    color: #FFF;
-    background:none;
+    color: #fff;
+    background: none;
     border: none;
     width: 100%;
     height: 5vh;
 }
 
-.boton-canales:hover{
+.boton-canales:hover {
     background-color: rgb(17, 19, 47);
     cursor: pointer;
-
 }
 
 /*----------------------------Fin del nav---------------------------------*/
@@ -340,24 +313,21 @@ hr{
     /* background-color: aqua; */
     display: flex;
     border-bottom: 5px rgba(30, 33, 84, 1) solid;
-
 }
 
 .header-header {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-left: 5%;
     margin-top: 3%;
     font-weight: 800;
     font-size: 2.5vh;
-
 }
 
 .subtexto-header-header {
-    font-family: 'Expletus Sans', cursive;
+    font-family: "Expletus Sans", cursive;
     margin-left: 2%;
     margin-top: 0.5%;
     font-weight: 500;
-
 }
 
 .div-textos {
@@ -375,17 +345,15 @@ hr{
     align-items: center;
     justify-content: right;
     margin-right: 5%;
-
 }
 
 .input-busqueda {
     border: none;
     height: 3vh;
     width: 12vw;
-    font-family: 'Expletus Sans', cursive;
+    font-family: "Expletus Sans", cursive;
     background-color: rgb(243, 243, 243);
     text-indent: 6%;
-
 }
 
 .button-busqueda-header {
@@ -398,7 +366,6 @@ hr{
 
 .button-busqueda-header:hover {
     background-color: rgb(210, 210, 210);
-
 }
 
 /*______________________fin del header__________________*/
@@ -408,14 +375,13 @@ hr{
 .screen {
     width: 100%;
     height: 75vh;
-    font-family: 'Hind Madurai', sans-serif;
+    font-family: "Hind Madurai", sans-serif;
     display: flex;
     flex-direction: column;
     overflow: auto;
-
 }
 
-.screen>div {
+.screen > div {
     max-width: 30%;
     height: auto;
     /* background-color: rgb(210, 210, 210); */
@@ -425,17 +391,13 @@ hr{
     display: flex;
     align-items: center;
     border-left: 1px rgba(30, 33, 84, 1) solid;
-
-
 }
 
-
-.screen>div>p {
+.screen > div > p {
     margin-left: 3%;
-
 }
 
-.screen>div>p.fecha-hora {
+.screen > div > p.fecha-hora {
     color: rgb(127, 127, 127);
     font-size: small;
 }
@@ -459,9 +421,7 @@ hr{
     width: 70vw;
     height: 6vh;
     text-indent: 3%;
-    font-family: 'Hind Madurai', sans-serif;
-
-
+    font-family: "Hind Madurai", sans-serif;
 }
 
 .button-input-texto {
@@ -472,346 +432,31 @@ hr{
     border: 1px black solid;
     border-left: none;
     font-size: 3vh;
-    font-family: 'Hind Madurai', sans-serif;
+    font-family: "Hind Madurai", sans-serif;
     transition: all;
-    transition-duration: .5s;
-
-
-
+    transition-duration: 0.5s;
 }
 
 .button-input-texto:hover {
     transition: ease-in;
     cursor: pointer;
     background-color: rgba(30, 33, 84, 1);
-    color: #FFF;
+    color: #fff;
 }
 
 /* -----------------Media queries---------------- */
 
-
-
-
-@media (max-width: 600px){
-#full-site{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.navegador{
-    width: 100%;
-    height: 15vh;
-}
-
-.header-nav {
-    /* background-color: #1e2154; */
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.icono-nav {
-    /* margin-top: 5%; */
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    /* overflow: hidden; */
-
-}
-
-#logo-telegrafo {
-    margin-top: 25%;
-    margin-bottom: 25%;
-    /* margin-left: 25%; */
-    /* margin-right: 25%;     */
-    width: 3em;
-    height: 3em;
-    color: white;
-}
-
-.h1-header-nav {
-display: none;
-}
-
-.h2-header-nav {
-display: none;
-}
-
-.añdirtexto{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin-top: 10%;
-    /* align-items: center; */
-    /* justify-content: center; */
-    color: #FFF;
-    font-family: 'Montserrat', sans-serif;
-
-}
-
-#bloque-abrir-canales{
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.abrir-input{
-    background: none;
-    border: none;
-    color: #FFF;
-    font-family: 'Hind Madurai', sans-serif;
-    font-size: larger;
-    width: 100%;
-    border-radius: 5%;
-}
-
-.input-canales{
-    background-color: rgb(17, 19, 47);
-    margin-top: 5%;
-    border: 1px solid rgba(30, 33, 84, 1);
-    color:  #FFF;
-    font-family: 'Hind Madurai', sans-serif;
-    text-indent: 3%;
-    width: 80%;
-    height: 100%;
-    /* margin: auto; */
-    /* border-radius: 10%; */
-}
-
-hr{
-display: none;
-}
-
-.bloque-contiene-canales{
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 0%;
-
-}
-
-.contenedor-canales{
-    margin-top: 10%;
-    /* margin: 0%; */
-    width: 80%;
-    height: 100%;
-    color: #FFF;
-    overflow-y: auto;
-    /* display: flex;
-    align-content: center;
-    justify-content: center; */
-}
-
-.contenedor-canales>p{
-    margin-bottom: 10%;
-    font-family: 'Hind Madurai', sans-serif;
-    font-size: larger;
-    /* background-color: rgba(30, 33, 84, 1);
-    position: fixed; */
-}
-
-/* -----------------------Barra canales-------------- */
-
-.canales::-webkit-scrollbar{
-    width: 10px;
-    
-}
-
-.canales::-webkit-scrollbar-track{
-    
-    background: rgb(17, 19, 47);
-}
-
-.canales::-webkit-scrollbar-thumb{
-    
-    background-color: #FFF;
-    max-height: 1px;
-    border-radius: 5px;
-}
-/* -------------------------------------------------------------- */
-
-.canales{
-    width: 100%;
-    height: 65%;
-    overflow: auto;
-}
-
-/* --------------------------header---------------------- */
-
-.header {
-    width: 100%;
-    height: 5vh;
-    /* background-color: aqua; */
-    display: flex;
-    border-bottom: 5px rgba(30, 33, 84, 1) solid;
-
-}
-
-.div-input {
-    width: 40%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    margin-right: 5%;
-
-}
-
-.input-busqueda {
-    border: none;
-    height: 3vh;
-    width: 30vw;
-    font-family: 'Expletus Sans', cursive;
-    background-color: rgb(243, 243, 243);
-    text-indent: 6%;
-
-}
-
-.button-busqueda-header {
-    border: none;
-    background-color: rgb(243, 243, 243);
-    height: 3vh;
-    width: 10vw;
-    cursor: pointer;
-}
-
-.screenes{
-    height: 75%;
-    overflow: hidden;
-}
-
-.screen {
-    width: 100%;
-    height: 100%;
-    font-family: 'Hind Madurai', sans-serif;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-
-}
-
-.screen::-webkit-scrollbar{
-    width: 10px;
-    
-}
-
-.screen::-webkit-scrollbar-track{
-    
-    background: #FFF;
-}
-
-.screen::-webkit-scrollbar-thumb{
-    
-    background-color: rgb(17, 19, 47);
-    max-height: 1px;
-    border-radius: 5px;
-}
-
-.screen>div {
-    max-width: 30%;
-    height: auto;
-    /* background-color: rgb(210, 210, 210); */
-    margin-top: 1.5%;
-    margin-left: 3%;
-    margin-bottom: 1.5%;
-    display: flex;
-    align-items: center;
-    border-left: 1px rgba(30, 33, 84, 1) solid;
-
-
-}
-
-
-.screen>div>p {
-    margin-left: 3%;
-
-}
-
-.screen>div>p.fecha-hora {
-    color: rgb(127, 127, 127);
-    font-size: small;
-}
-
-.input-texto {
-    width: 100%;
-    max-height: 15vh;
-    border-top: 5px rgba(30, 33, 84, 1) solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.input-input-texto {
-    /* margin: auto; */
-    width: 70vw;
-    height: 6vh;
-    text-indent: 5%;
-    font-family: 'Hind Madurai', sans-serif;
-    font-size: larger;
-
-}
-
-.button-input-texto {
-    height: 6vh;
-    width: 10vw;
-    color: black;
-    background-color: white;
-    border: 1px black solid;
-    border-left: none;
-    font-size: 3vh;
-    font-family: 'Hind Madurai', sans-serif;
-    transition: all;
-    transition-duration: .5s;
-
-
-
-}
-
-.button-input-texto:hover {
-    transition: ease-in;
-    cursor: pointer;
-    background-color: rgba(30, 33, 84, 1);
-    color: #FFF;
-}
-
-.main {
-    width: 100%;
-    height: 85vh;
-    /* background-color: aqua; */
-    display: flex;
-    flex-direction: column;
-}
-
-}
-
-@media only screen and (min-width: 601px) and (max-width: 900px){
-    #full-site{
+@media (max-width: 600px) {
+    #full-site {
         display: flex;
         flex-direction: column;
     }
-    
-    
-    .navegador{
+
+    .navegador {
         width: 100%;
         height: 15vh;
     }
-    
+
     .header-nav {
         /* background-color: #1e2154; */
         width: 100%;
@@ -823,7 +468,7 @@ display: none;
         align-content: center;
         justify-content: center;
     }
-    
+
     .icono-nav {
         /* margin-top: 5%; */
         height: 100%;
@@ -833,9 +478,8 @@ display: none;
         align-content: center;
         justify-content: center;
         /* overflow: hidden; */
-    
     }
-    
+
     #logo-telegrafo {
         margin-top: 25%;
         margin-bottom: 25%;
@@ -845,63 +489,62 @@ display: none;
         height: 3em;
         color: white;
     }
-    
+
     .h1-header-nav {
-    display: none;
+        display: none;
     }
-    
+
     .h2-header-nav {
-    display: none;
+        display: none;
     }
-    
-    .añdirtexto{
+
+    .añdirtexto {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
-        margin-top: 2%;
+        margin-top: 10%;
         /* align-items: center; */
         /* justify-content: center; */
-        color: #FFF;
-        font-family: 'Montserrat', sans-serif;
-    
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
     }
-    
-    #bloque-abrir-canales{
+
+    #bloque-abrir-canales {
         width: 100%;
         height: 15vh;
         display: flex;
         flex-direction: column;
     }
-    
-    .abrir-input{
+
+    .abrir-input {
         background: none;
         border: none;
-        color: #FFF;
-        font-family: 'Hind Madurai', sans-serif;
+        color: #fff;
+        font-family: "Hind Madurai", sans-serif;
         font-size: larger;
         width: 100%;
         border-radius: 5%;
     }
-    
-    .input-canales{
+
+    .input-canales {
         background-color: rgb(17, 19, 47);
         margin-top: 5%;
         border: 1px solid rgba(30, 33, 84, 1);
-        color:  #FFF;
-        font-family: 'Hind Madurai', sans-serif;
+        color: #fff;
+        font-family: "Hind Madurai", sans-serif;
         text-indent: 3%;
         width: 80%;
         height: 100%;
         /* margin: auto; */
         /* border-radius: 10%; */
     }
-    
-    hr{
-    display: none;
+
+    hr {
+        display: none;
     }
-    
-    .bloque-contiene-canales{
+
+    .bloque-contiene-canales {
         width: 100%;
         height: 15vh;
         display: flex;
@@ -909,67 +552,62 @@ display: none;
         align-items: center;
         justify-content: center;
         justify-items: center;
-        margin-top: 0%;
-    
+        margin-top: 0;
     }
-    
-    .contenedor-canales{
-        margin-top: 2%;
+
+    .contenedor-canales {
+        margin-top: 10%;
         /* margin: 0%; */
         width: 80%;
         height: 100%;
-        color: #FFF;
+        color: #fff;
         overflow-y: auto;
         /* display: flex;
-        align-content: center;
-        justify-content: center; */
+    align-content: center;
+    justify-content: center; */
     }
-    
-    .contenedor-canales>p{
-        margin-bottom: 2%;
-        font-family: 'Hind Madurai', sans-serif;
+
+    .contenedor-canales > p {
+        margin-bottom: 10%;
+        font-family: "Hind Madurai", sans-serif;
         font-size: larger;
         /* background-color: rgba(30, 33, 84, 1);
-        position: fixed; */
+    position: fixed; */
     }
-    
+
     /* -----------------------Barra canales-------------- */
-    
-    .canales::-webkit-scrollbar{
+
+    .canales::-webkit-scrollbar {
         width: 10px;
-        
     }
-    
-    .canales::-webkit-scrollbar-track{
-        
+
+    .canales::-webkit-scrollbar-track {
         background: rgb(17, 19, 47);
     }
-    
-    .canales::-webkit-scrollbar-thumb{
-        
-        background-color: #FFF;
+
+    .canales::-webkit-scrollbar-thumb {
+        background-color: #fff;
         max-height: 1px;
         border-radius: 5px;
     }
     /* -------------------------------------------------------------- */
-    
-    .canales{
+
+    .canales {
         width: 100%;
         height: 65%;
         overflow: auto;
     }
-    
+
     /* --------------------------header---------------------- */
-    
+
     .header {
         width: 100%;
-        height: 10vh;
+        height: 5vh;
         /* background-color: aqua; */
         display: flex;
         border-bottom: 5px rgba(30, 33, 84, 1) solid;
-    
     }
-    
+
     .div-input {
         width: 40%;
         height: auto;
@@ -977,19 +615,17 @@ display: none;
         align-items: center;
         justify-content: right;
         margin-right: 5%;
-    
     }
-    
+
     .input-busqueda {
         border: none;
         height: 3vh;
         width: 30vw;
-        font-family: 'Expletus Sans', cursive;
+        font-family: "Expletus Sans", cursive;
         background-color: rgb(243, 243, 243);
         text-indent: 6%;
-    
     }
-    
+
     .button-busqueda-header {
         border: none;
         background-color: rgb(243, 243, 243);
@@ -997,40 +633,36 @@ display: none;
         width: 10vw;
         cursor: pointer;
     }
-    
-    .screenes{
+
+    .screenes {
         height: 75%;
         overflow: hidden;
     }
-    
+
     .screen {
         width: 100%;
         height: 100%;
-        font-family: 'Hind Madurai', sans-serif;
+        font-family: "Hind Madurai", sans-serif;
         display: flex;
         flex-direction: column;
         overflow: auto;
-    
     }
-    
-    .screen::-webkit-scrollbar{
+
+    .screen::-webkit-scrollbar {
         width: 10px;
-        
     }
-    
-    .screen::-webkit-scrollbar-track{
-        
-        background: #FFF;
+
+    .screen::-webkit-scrollbar-track {
+        background: #fff;
     }
-    
-    .screen::-webkit-scrollbar-thumb{
-        
+
+    .screen::-webkit-scrollbar-thumb {
         background-color: rgb(17, 19, 47);
         max-height: 1px;
         border-radius: 5px;
     }
-    
-    .screen>div {
+
+    .screen > div {
         max-width: 30%;
         height: auto;
         /* background-color: rgb(210, 210, 210); */
@@ -1040,21 +672,302 @@ display: none;
         display: flex;
         align-items: center;
         border-left: 1px rgba(30, 33, 84, 1) solid;
-    
-    
     }
-    
-    
-    .screen>div>p {
+
+    .screen > div > p {
         margin-left: 3%;
-    
     }
-    
-    .screen>div>p.fecha-hora {
+
+    .screen > div > p.fecha-hora {
         color: rgb(127, 127, 127);
         font-size: small;
     }
-    
+
+    .input-texto {
+        width: 100%;
+        max-height: 15vh;
+        border-top: 5px rgba(30, 33, 84, 1) solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .input-input-texto {
+        /* margin: auto; */
+        width: 70vw;
+        height: 6vh;
+        text-indent: 5%;
+        font-family: "Hind Madurai", sans-serif;
+        font-size: larger;
+    }
+
+    .button-input-texto {
+        height: 6vh;
+        width: 10vw;
+        color: black;
+        background-color: white;
+        border: 1px black solid;
+        border-left: none;
+        font-size: 3vh;
+        font-family: "Hind Madurai", sans-serif;
+        transition: all;
+        transition-duration: 0.5s;
+    }
+
+    .button-input-texto:hover {
+        transition: ease-in;
+        cursor: pointer;
+        background-color: rgba(30, 33, 84, 1);
+        color: #fff;
+    }
+
+    .main {
+        width: 100%;
+        height: 85vh;
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    #full-site {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navegador {
+        width: 100%;
+        height: 15vh;
+    }
+
+    .header-nav {
+        /* background-color: #1e2154; */
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .icono-nav {
+        /* margin-top: 5%; */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        /* overflow: hidden; */
+    }
+
+    #logo-telegrafo {
+        margin-top: 25%;
+        margin-bottom: 25%;
+        /* margin-left: 25%; */
+        /* margin-right: 25%;     */
+        width: 3em;
+        height: 3em;
+        color: white;
+    }
+
+    .h1-header-nav {
+        display: none;
+    }
+
+    .h2-header-nav {
+        display: none;
+    }
+
+    .añdirtexto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+        /* align-items: center; */
+        /* justify-content: center; */
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    #bloque-abrir-canales {
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .abrir-input {
+        background: none;
+        border: none;
+        color: #fff;
+        font-family: "Hind Madurai", sans-serif;
+        font-size: larger;
+        width: 100%;
+        border-radius: 5%;
+    }
+
+    .input-canales {
+        background-color: rgb(17, 19, 47);
+        margin-top: 5%;
+        border: 1px solid rgba(30, 33, 84, 1);
+        color: #fff;
+        font-family: "Hind Madurai", sans-serif;
+        text-indent: 3%;
+        width: 80%;
+        height: 100%;
+        /* margin: auto; */
+        /* border-radius: 10%; */
+    }
+
+    hr {
+        display: none;
+    }
+
+    .bloque-contiene-canales {
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 0;
+    }
+
+    .contenedor-canales {
+        margin-top: 2%;
+        /* margin: 0%; */
+        width: 80%;
+        height: 100%;
+        color: #fff;
+        overflow-y: auto;
+        /* display: flex;
+        align-content: center;
+        justify-content: center; */
+    }
+
+    .contenedor-canales > p {
+        margin-bottom: 2%;
+        font-family: "Hind Madurai", sans-serif;
+        font-size: larger;
+        /* background-color: rgba(30, 33, 84, 1);
+        position: fixed; */
+    }
+
+    /* -----------------------Barra canales-------------- */
+
+    .canales::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .canales::-webkit-scrollbar-track {
+        background: rgb(17, 19, 47);
+    }
+
+    .canales::-webkit-scrollbar-thumb {
+        background-color: #fff;
+        max-height: 1px;
+        border-radius: 5px;
+    }
+    /* -------------------------------------------------------------- */
+
+    .canales {
+        width: 100%;
+        height: 65%;
+        overflow: auto;
+    }
+
+    /* --------------------------header---------------------- */
+
+    .header {
+        width: 100%;
+        height: 10vh;
+        /* background-color: aqua; */
+        display: flex;
+        border-bottom: 5px rgba(30, 33, 84, 1) solid;
+    }
+
+    .div-input {
+        width: 40%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-right: 5%;
+    }
+
+    .input-busqueda {
+        border: none;
+        height: 3vh;
+        width: 30vw;
+        font-family: "Expletus Sans", cursive;
+        background-color: rgb(243, 243, 243);
+        text-indent: 6%;
+    }
+
+    .button-busqueda-header {
+        border: none;
+        background-color: rgb(243, 243, 243);
+        height: 3vh;
+        width: 10vw;
+        cursor: pointer;
+    }
+
+    .screenes {
+        height: 75%;
+        overflow: hidden;
+    }
+
+    .screen {
+        width: 100%;
+        height: 100%;
+        font-family: "Hind Madurai", sans-serif;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .screen::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .screen::-webkit-scrollbar-track {
+        background: #fff;
+    }
+
+    .screen::-webkit-scrollbar-thumb {
+        background-color: rgb(17, 19, 47);
+        max-height: 1px;
+        border-radius: 5px;
+    }
+
+    .screen > div {
+        max-width: 30%;
+        height: auto;
+        /* background-color: rgb(210, 210, 210); */
+        margin-top: 1.5%;
+        margin-left: 3%;
+        margin-bottom: 1.5%;
+        display: flex;
+        align-items: center;
+        border-left: 1px rgba(30, 33, 84, 1) solid;
+    }
+
+    .screen > div > p {
+        margin-left: 3%;
+    }
+
+    .screen > div > p.fecha-hora {
+        color: rgb(127, 127, 127);
+        font-size: small;
+    }
+
     .input-texto {
         width: 100%;
         max-height: 10vh;
@@ -1064,17 +977,16 @@ display: none;
         align-items: center;
         align-content: center;
     }
-    
+
     .input-input-texto {
         /* margin: auto; */
         width: 70vw;
         height: 6vh;
         text-indent: 5%;
-        font-family: 'Hind Madurai', sans-serif;
+        font-family: "Hind Madurai", sans-serif;
         font-size: larger;
-    
     }
-    
+
     .button-input-texto {
         height: 6vh;
         width: 10vw;
@@ -1083,21 +995,18 @@ display: none;
         border: 1px black solid;
         border-left: none;
         font-size: 3vh;
-        font-family: 'Hind Madurai', sans-serif;
+        font-family: "Hind Madurai", sans-serif;
         transition: all;
-        transition-duration: .5s;
-    
-    
-    
+        transition-duration: 0.5s;
     }
-    
+
     .button-input-texto:hover {
         transition: ease-in;
         cursor: pointer;
         background-color: rgba(30, 33, 84, 1);
-        color: #FFF;
+        color: #fff;
     }
-    
+
     .main {
         width: 100%;
         height: 85vh;
@@ -1105,5 +1014,4 @@ display: none;
         display: flex;
         flex-direction: column;
     }
-    
-    }
+}
